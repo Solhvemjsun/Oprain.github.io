@@ -1,0 +1,5 @@
+[submodule "templates/vonge"]
+	url = https://github.com/Solhvemjsun/vonge-zola-theme
+[submodule "themes/vonge"]
+	path = themes/vonge
+	url = https://github.com/Solhvemjsun/vonge-zola-theme

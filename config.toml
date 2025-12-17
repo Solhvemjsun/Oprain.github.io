@@ -1,0 +1,118 @@
+# The URL the site will be built for
+base_url = "https://oprain.com"
+
+title = "Oprain"
+author = "Sol Wang"
+description = "Oprain is a company dedicated in open-source neurotechnology"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+generate_feeds = true
+feed_filenames = [ "atom.xml",]
+minify_html = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+theme = "vonge"
+
+taxonomies = [
+    { name = "tags", feed = true},
+]
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+logo_image = "assets/logo/oprain_text.svg"
+social_media_share_image = "assets/board_members/Sol_Wang_avatar.png"
+disqus_identifier = ""
+google_analytics = ""
+twitter_handle = ""
+
+author_image = '/assets/board_members/Sol_Wang_avatar.png'
+
+navigation = [
+    { url = "$BASE_URL", title = "Home" },
+    { url = "$BASE_URL/products", title = "Products" },
+    { url = "$BASE_URL/posts", title = "Blog" },
+    { url = "$BASE_URL/tags", title = "Tags" },
+    { url = "", title = "Pages", submenu = [
+        { url = "$BASE_URL/about", title = "About" },
+        { url = "$BASE_URL/elements", title = "Elements" }
+    ] }
+]
+social_icons = [
+    { url = "https://github.com/Oprain", icon = "GitHub" },
+    { url = "https://twitter.com/_cydave", icon = "Twitter" },
+    { url = "$BASE_URL/atom.xml", icon = "RSS" },
+    { url = "https://pinterest.com", icon = "Pinterest"},
+]
+date_format = "%d %b %Y"
+language_direction = "auto"
+keywords = ["keyword1", "keyword2", "keyword3"]
+
+[extra.newsletter]
+newsletter_title = "Join our mailing list"
+newsletter_identifier = ""
+newsletter_button = "Subscribe"
+newsletter_description = "Get inspiration, updates and, cool stuff!"
+
+[extra.footer]
+menu = [
+    { url = "$BASE_URL", title = "Home" },
+    { url = "$BASE_URL/projects/", title = "Products" },
+    { url = "$BASE_URL/elements/", title = "Elements" },
+    { url = "$BASE_URL/about/", title = "About" },
+    { url = "$BASE_URL/posts/", title = "Blog" },
+]
+#copyright = ""
+
+
+[[extra.content_blocks]]
+block = "hero"
+title = "Hi there, We are Oprain"
+description_html = "A company that dedicated to build <strong>open-source hardware</strong> for <strong>Neuroscience</strong> and <strong>Brain-Machine Interface</strong> with well software support and world-wide community." # We also collaborate with the top-tier laboratories in the world to discover all the new possibilities inside our brain."
+image = "/assets/main_page/oprain_logo.png"
+image_alt = "Oprain's logo"
+cta_button_link = "#contact"
+cta_button = "Get in touch"
+works_button_link = "#projects"
+works_button = "See our products"
+[[extra.content_blocks]]
+block = "projects-section"
+title = "Products"
+description_html = """
+    <p>Open-source devices, with great quality and fair price!</p>"""
+link_url = "/projects"
+show_projects = true
+[[extra.content_blocks]]
+block = "testimonials-section"
+title = "Our Team"
+description_html = ""
+show_testimonials = true
+[[extra.content_blocks]]
+block = "blog-section"
+title = "Recent Posts"
+description_html = """
+    <p>Vonge blog features productivity, tips, inspiration and strategies for
+    massive profits. Find out how to set up a successful blog or how to make
+    yours even better!</p>"""
+link_url = "/posts"
+show_posts = true
+[[extra.content_blocks]]
+block = "newsletter"
+newsletter_title = "Join our mailing list"
+newsletter_description = "Get updates of products, free projects, and all the other cool stuffs!"
+newsletter_identifier = ""
+newsletter_button = "Subscribe"
+[[extra.content_blocks]]
+block = "contact-form"
+form_title = "Get in touch"
+form_description = "Leave your information for further conversations!."
+form_success_page = ''
+form_submission_email = "site@example.com"
+form_button_text = "Send now"
