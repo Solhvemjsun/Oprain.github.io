@@ -2,7 +2,7 @@
 base_url = "https://oprain.github.io"
 
 title = "Oprain"
-author = "Sol Wang"
+author = "Oprain Group"
 description = "Oprain is a company dedicated in open-source neurotechnology"
 
 # Whether to automatically compile all Sass files in the sass directory
@@ -33,7 +33,7 @@ disqus_identifier = ""
 google_analytics = ""
 twitter_handle = ""
 
-author_image = '/assets/board_members/Sol_Wang_avatar.png'
+author_image = '/assets/logo/oprain_logo.png'
 
 navigation = [
     { url = "$BASE_URL", title = "Home" },

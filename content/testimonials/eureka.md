@@ -2,6 +2,6 @@
 [extra]
 name = "Eureka Gao"
 position = "Art Director"
-image = "/images/client-3.jpg"
+image = "/assets/board_members/eureka_gao_picture.jpg"
 blurb = "Saikou Moe Aidoru."
 +++
