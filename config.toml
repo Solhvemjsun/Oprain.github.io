@@ -27,7 +27,7 @@ taxonomies = [
 highlight_code = true
 
 [extra]
-logo_image = "assets/logo/oprain_text.svg"
+logo_image = "assets/logo/text_black.svg"
 social_media_share_image = "assets/board_members/Sol_Wang_avatar.png"
 disqus_identifier = ""
 google_analytics = ""
